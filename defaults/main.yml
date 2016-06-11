@@ -1,0 +1,12 @@
+---
+nodejs_version: 4.4.5
+nodejs_archive_os: linux
+nodejs_archive_architecture: x64
+nodejs_archive_file_name: node-v{{ nodejs_version }}-{{ nodejs_archive_os }}-{{ nodejs_archive_architecture }}.tar.xz
+nodejs_archive_base_url: https://nodejs.org/dist/v{{ nodejs_version }}/
+nodejs_archive_checksum: bd6505d8a350cd83907374ea98730b0ba99b97ec45cee418d453a0154384805a
+nodejs_archive_checksum_algorithm: sha256
+nodejs_archive_cache_path: /usr/local/pkg
+nodejs_archive_destination_path: /usr/local
+nodejs_archive_extracted_file_name: node-v{{ nodejs_version }}-{{ nodejs_archive_os }}-{{ nodejs_archive_architecture }}
+nodejs_archive_destination_file_name: node{{ nodejs_version }}

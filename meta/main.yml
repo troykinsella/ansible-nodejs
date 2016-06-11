@@ -1,0 +1,28 @@
+---
+dependencies:
+- role: troykinsella.archive
+  archive_file_name: "{{ nodejs_archive_file_name }}"
+  archive_url: "{{ nodejs_archive_base_url }}{{ archive_file_name }}"
+  archive_checksum: "{{ nodejs_archive_checksum }}"
+  archive_checksum_algorithm: "{{ nodejs_archive_checksum_algorithm }}"
+  archive_cache_path: "{{ nodejs_archive_cache_path }}"
+  archive_destination_path: "{{ nodejs_archive_destination_path }}"
+  archive_extracted_file_name: "{{ nodejs_archive_extracted_file_name }}"
+  archive_destination_file_name: "{{ nodejs_archive_destination_file_name }}"
+galaxy_info:
+  author: Troy Kinsella
+  description: Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient.
+  license: MIT
+  min_ansible_version: 1.9
+  platforms:
+  - name: Ubuntu
+    versions:
+    - trusty
+    - utopic
+    - vivid
+    - wily
+    - xenial
+  galaxy_tags:
+    - packaging
+    - nodejs
+  github_branch: master
